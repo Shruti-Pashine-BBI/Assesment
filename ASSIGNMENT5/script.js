@@ -1,12 +1,13 @@
 const data = [
-  {
-    type: "div",
-    children: [
-      { type: "h1", children: [{ type: "p" }] },
-      { type: "ul", children: [{ type: "li" }, { type: "li" }] },
-    ],
-  },
+  { type: 'div', children: [
+    { type: 'h1', children: [{ type: 'p', text: 'abtc' }] },
+    { type: 'ul', children: [
+      { type: 'li' , text: 'item 1'},
+      { type: 'li', text: 'item 2' }
+    ]}
+  ]}
 ];
+
 
 
 // console.log(data[0].type);
@@ -48,8 +49,10 @@ const data = [
 
 function levelStructure(eleData,lev){
   const element = document.createElement(eleData.type);
+  element.textContent=eleData.text;
  
    document.body.appendChild(element);
+   
   const ind= '  '.repeat(lev);
   console.log(`${ind}${eleData.type}-level ${lev}`)
   

@@ -1,0 +1,5 @@
+select Customers.CustomerName, Shippers.ShipperName,Orders.OrderDate
+from Orders
+join Customers on Orders.CustomerID = Customers.CustomerID
+join Shippers on Orders.ShipperID = Shippers.ShipperID
+where OrderDate like '%04';

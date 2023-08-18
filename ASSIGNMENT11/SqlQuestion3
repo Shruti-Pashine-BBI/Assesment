@@ -1,0 +1,5 @@
+select MAX(OrderDetails.Quantity),Products.ProductName from Products
+Join OrderDetails on Products.ProductID=OrderDetails.ProductID
+group by Products.ProductName order by sum(OrderDetails.Quantity)
+Desc
+limit 1 offset 2;

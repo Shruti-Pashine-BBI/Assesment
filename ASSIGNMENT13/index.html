@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <form id="form" class="input-control">
+        <h3 id="Registration">Registration</h3>
+        <label for="firstName" id="full">First Name:</label>
+        <input type="text" id="firstName full"  style="display: inline;"    oninvalid="this.setCustomValidity('Enter Name')" oninput="this.setCustomValidity('')">  
+        <br>
+        <br> 
+        <label for="firstName" id="full">Last Name:</label>
+        <input type="text" id="lastName full"  style="display: inline;" required  oninvalid="this.setCustomValidity('Enter Last Name')" oninput="this.setCustomValidity('')">
+        <br>
+        <br>
+        <label for="email" >Email:</label>
+        <input type="email" id="email"  required oninvalid="this.setCustomValidity('Enter Mail')" oninput="this.setCustomValidity('')"><br>
+        <br>
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" class="" required oninvalid="this.setCustomValidity('Enter Phone Number')" oninput="this.setCustomValidity('')"><br>
+        <br>
+        <br>
+        <label for="password">Username:</label>
+        <input type="email" id="username" class="" required oninvalid="this.setCustomValidity('Enter UserName')" oninput="this.setCustomValidity('')"><br>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="" required oninvalid="this.setCustomValidity('Enter Password')" oninput="this.setCustomValidity('')"><br>
+        <br>
+        <br>
+        <button type="submit" onclick="validateForm()">Sign Up</button>
+        <button> <a href="login.html" style="text-decoration: none; color:white">Already Have an Account</a></button> 
+        </form>
+</body>
+</html>

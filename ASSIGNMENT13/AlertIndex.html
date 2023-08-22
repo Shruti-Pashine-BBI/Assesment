@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alert Signup Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h3 id="Registration">Registration</h3>
+    <form id="form" class="input-control">
+        <label for="firstName" id="full">First Name:</label>
+        <input type="text" id="firstName"   required>  
+        <br>
+        <br> 
+        <label for="lastName" id="full">Last Name:</label>
+        <input type="text" id="lastName"  required  >
+        <br>
+        <br>
+        <label for="email" >Email:</label>
+        <input type="email" id="email"  required ><br>
+        <br>
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" class="" required ><br>
+        <br>
+        <br>
+        <label for="password">Username:</label>
+        <input type="email" id="username" class="" required ><br>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="" required ><br>
+        <br>
+        <br>
+        <button type="submit" onclick="validateForm()">Sign Up</button>
+        <button> <a href="login.html" style="text-decoration: none; color:white">Already Have an Account</a></button> 
+        </form>
+
+        <script src="script.js">
+       
+        </script>
+</body>
+</html>
